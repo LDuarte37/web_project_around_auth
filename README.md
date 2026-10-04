@@ -29,6 +29,12 @@ La sesión se conserva utilizando un token JWT almacenado en `localStorage`.
 - Apertura de imágenes en ventanas emergentes.
 - Componentes reutilizables en React.
 
+## Demo
+
+Puedes ver la aplicación publicada en GitHub Pages:
+
+https://lduarte37.github.io/web_project_around_auth/
+
 ## Tecnologías utilizadas
 
 - HTML5
