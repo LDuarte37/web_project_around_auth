@@ -87,6 +87,29 @@ npm run lint
 npm run build
 ```
 
+## Capturas de pantalla
+
+### Registro de usuario
+
+![Pantalla de registro](./screenshots/signup.png)
+
+### Registro exitoso
+
+![Registro exitoso](./screenshots/register-success.png)
+
+### Error de registro
+
+![Error durante el registro](./screenshots/register-failure.png)
+
+### Inicio de sesión
+
+![Pantalla de inicio de sesión](./screenshots/login.png)
+
+### Usuario autenticado
+
+![Aplicación con sesión iniciada](./screenshots/logged-in.png)
+
+
 ## Autor
 
 Luis Duarte
