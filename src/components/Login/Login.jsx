@@ -1,0 +1,56 @@
+import { useState } from "react";
+import { Link } from "react-router-dom";
+import "./Login.css";
+
+function Login({ onLogin }) {
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
+
+  function handleSubmit(event) {
+    event.preventDefault();
+
+    onLogin({
+      email,
+      password,
+    });
+  }
+
+  return (
+    <div className="auth">
+      <h2 className="auth__title">Inicia sesión</h2>
+
+      <form className="auth__form" onSubmit={handleSubmit}>
+        <input
+          className="auth__input"
+          type="email"
+          placeholder="Correo electrónico"
+          value={email}
+          onChange={(event) => setEmail(event.target.value)}
+          required
+        />
+
+        <input
+          className="auth__input"
+          type="password"
+          placeholder="Contraseña"
+          value={password}
+          onChange={(event) => setPassword(event.target.value)}
+          required
+        />
+
+        <button className="auth__submit" type="submit">
+          Inicia sesión
+        </button>
+      </form>
+
+      <p className="auth__text">
+        ¿Aún no eres miembro?{" "}
+        <Link className="auth__link" to="/signup">
+          Regístrate aquí
+        </Link>
+      </p>
+    </div>
+  );
+}
+
+export default Login;
